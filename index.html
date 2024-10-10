@@ -1,207 +1,49 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sklep Internetowy</title>
-    <link rel="stylesheet" href="styles.css">
-<style>
-    * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    <title>Hot Wheals</title>
 
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-}
-
-/* Header Styles */
-header {
-    background-color: #0c054b;
-    padding: 20px;
-    color: white;
-}
-
-.header-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    width: 150px;
-}
-
-nav ul {
-    list-style-type: none;
-    display: flex;
-    gap: 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-}
-
-.header-icons {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.header-icons input {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-}
-
-.header-icons a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-}
-
-/* Banner Section */
-.banner {
-    background: url('banner.jpg') no-repeat center center;
-    background-size: cover;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: rgb(0, 0, 0);
-    text-align: center;
-}
-
-.banner-content h1 {
-    font-size: 40px;
-}
-
-.banner-content p {
-    font-size: 20px;
-}
-
-/* Product Grid */
-.product-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    padding: 40px;
-}
-
-.product {
-    background-color: rgb(65, 62, 62);
-    padding: 20px;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.product img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.product p {
-    margin: 10px 0;
-}
-
-.price {
-    font-weight: bold;
-    font-size: 18px;
-}
-
-button {
-    background-color: #333;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #555;
-}
-
-/* Footer */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-}
-</style>
+    <style>
+        .droga {
+            width: 1850px;
+        }
+        
+        .mcqueen{
+            height: 50px;
+            position: absolute;
+            animation: mcqueenAnimation 6s linear infinite;
+        }
+        
+        @keyframes mcqueenAnimation {
+        
+        0%{
+            transform: translate(170px,130px);
+        }
+        25%{
+            transform: translate(1500px,130px) rotate(90deg);
+        }
+        50%{
+            transform: translate(1500px,850px)rotate(180deg);
+        }
+        75%{
+            transform: translate(170px,850px)rotate(270deg);
+        }
+        100%{
+            transform: translate(60px,130px)rotate(360deg);
+        }
+        
+        }
 
 
+
+
+    </style>
 </head>
 <body>
-
-    <!-- Header Section -->
-    <header>
-        <div class="header-top">
-            <img src="https://img.freepik.com/premium-wektory/ilustracja-logo-sklepu-mody-dla-kobiet_278222-7401.jpg" alt="Clothes store" class="logo">
-            <nav>
-                <ul>
-                    <li><a href="#">Nowości</a></li>
-                    <li><a href="#">Dla Niej</a></li>
-                    <li><a href="#">Dla Niego</a></li>
-                    <li><a href="#">Wyprzedaż</a></li>
-                </ul>
-            </nav>
-            <div class="header-icons">
-                <input type="text" placeholder="Szukaj...">
-                <a href="#" class="account-icon">Konto</a>
-                <a href="#" class="fav-icon">Ulubione</a>
-                <a href="#" class="cart-icon">Koszyk</a>
-            </div>
-        </div>
-    </header>
-
-    <!-- Banner Section -->
-    <section class="banner">
-        <div class="banner-content">
-            <h1>KURTKI I KAMIZELKI DO 259PLN</h1>
-            <p>Najlepsze ceny na kurtki!</p>
-        </div>
-    </section>
-
-    <!-- Product Grid Section -->
-    <section class="product-grid">
-        <div class="product">
-            <img src="https://static.bershka.net/assets/public/4c78/87ad/444345d5963d/057011a9da68/06799677800-a3o/06799677800-a3o.jpg?ts=1724222282707&w=1920" alt="Czarna Kurtka ze skóry">
-            <p>Czarna kurtka ze skóry</p>
-            <p class="price">259 PLN</p>
-            <button>Dodaj do koszyka</button>
-        </div>
-        <div class="product">
-            <img src="https://static.bershka.net/assets/public/d346/d020/026640d0b384/560c6479b03e/06960644800-a3o/06960644800-a3o.jpg?ts=1727789802763&w=800" alt="Czarna kurtka">
-            <p>Techniczny płaszcz z kapturem</p>
-            <p class="price">229 PLN</p>
-            <button>Dodaj do koszyka</button>
-        </div>
-        <div class="product">
-            <img src="https://static.bershka.net/assets/public/e925/e90b/0a1243be9437/7fe01ca88b88/06783551800-a3o/06783551800-a3o.jpg?ts=1724841814946&w=800" alt="Czarna Kurtka">
-            <p>Pikowana kurtka z kapturem</p>
-            <p class="price">199 PLN</p>
-            <button>Dodaj do koszyka</button>
-        </div>
-        <div class="product">
-            <img src="https://static.bershka.net/assets/public/025d/b34f/ccd4417196ec/cbde3ff3b853/08616551712-a3o/08616551712-a3o.jpg?ts=1724769181246&w=1920" alt="Pikowana kamizelka">
-            <p>Pikowana kamizelka</p>
-            <p class="price">159 PLN</p>
-            <button>Dodaj do koszyka</button>
-        </div>
-    </section>
-
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2024 Sklep Internetowy. Wszelkie prawa zastrzeżone.</p>
-    </footer>
-
+    <img src="mcqueen.png" class="mcqueen">
+    <img src="Bez tytułu.png" class="droga">
+    
 </body>
 </html>
