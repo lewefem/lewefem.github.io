@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Wizytówka - Technik Informatyk">
+    <meta property="og:title" content="Wizytówka Filp Marchwiany">
+    <meta property="og:description" content="Poznaj Filip Marchwianego, Technika Informatyka">
+    <meta property="og:image" content="link_do_zdjecia.jpg">
+    <meta property="og:url" content="https://www.przykladowa-strona.pl">
+    <title>Wizytówka Filip Marchwiany</title>
+
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #252525;
+    color: #fff;
+}
+header, footer {
+    width: 100%;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+header h1 {
+    color: #fff;
+}
+header p {
+    color: #746f6f;
+
+}
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 2px solid #746f6f;
+    padding-bottom: 4px;
+}
+.container {
+    max-width: 800px;
+    width: 100%;
+    background: #fff;
+    color: #746f6f;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(46, 46, 46, 0.2);
+    border-radius: 10px;
+    margin: 20px 0;
+}
+section {
+    margin: 20px 0;
+}
+h2 {
+    color: #6e6a6a;
+}
+.contact-form input, .contact-form textarea, .contact-form button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+}
+.contact-form button {
+    background-color: #746f6f;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.contact-form button:hover {
+    background-color: #746f6f;
+}
+.project-link {
+    display: block;
+    margin-bottom: 10px;
+}
+@media (max-width: 600px) {
+    .container {
+        margin: 10px;
+        padding: 15px;
+    }
+    nav a {
+        margin: 0 5px;
+    }
+}
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Filip Marchwiany</h1>
+        <p>Technik Informatyk</p>
+        <nav>
+            <a href="#omnie">O mnie</a>
+            <a href="#projekty">Projekty</a>
+            <a href="#umiejetnosci">Umiejętności</a>
+            <a href="#kontakt">Kontakt</a>
+        </nav>
+    </header>
+    <div class="container" id="omnie">
+        <section>
+            <h2>O mnie</h2>
+            <p>Jestem Filip Marchwiany. Chodzę to techinkum nr 10 we Wrocławiu. </p>
+        </section>
+    </div>
+    <div class="container" id="projekty">
+        <section>
+            <h2>Projekty</h2>
+            <ul>
+                <li><a class="project-link" href="#">Beat 1</a></li>
+                <li><a class="project-link" href="#">Beat 2</a></li>
+            </ul>
+        </section>
+    </div>
+    <div class="container" id="umiejetnosci">
+        <section>
+            <h2>Umiejętności</h2>
+            <p>Python, HTML, JavaScript, CSS</p>
+        </section>
+    </div>
+    <div class="container" id="kontakt">
+        <section>
+            <h2>Kontakt</h2>
+            <p>Email: <a href="#">filip.marchwiany@mail.com</a></p>
+            <p>Telefon: <a href="#">123 456 789</a></p>
+            <form class="contact-form">
+                <input type="text" name="name" placeholder="Twoje imię">
+                <input type="email" name="email" placeholder="Twój email">
+                <textarea name="message" placeholder="Twoja wiadomość"></textarea>
+                <button type="submit">Wyślij</button>
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p>© 2024 Filip Marchwiany</p>
+    </footer>
+</body>
+</html>
